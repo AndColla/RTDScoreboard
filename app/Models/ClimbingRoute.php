@@ -13,6 +13,12 @@ class ClimbingRoute extends Model
 {
     use HasUuids;
 
+    protected $fillable = [
+        'number',
+        'grade',
+        'type',
+    ];
+
     protected function casts(): array
     {
         return [
